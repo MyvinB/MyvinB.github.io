@@ -1,0 +1,408 @@
+<html>
+<title>Myvin Barboza | CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="css/cv.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="w3-black">
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+		<!-- Avatar image in top left corner -->
+		<!-- 		<img src="/w3images/avatar_smoke.jpg" style="width: 100%">  -->
+		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+			<i class="fa fa-home w3-xxlarge"></i>
+			<p>HOME</p>
+		</a> <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black"> <i
+				class="fa fa-user w3-xxlarge"></i>
+			<p>ABOUT</p>
+		</a> <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black"> <i
+				class="fa fa-user w3-xxlarge"></i>
+			<p>PROJECTS</p>
+		</a> <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black"> <i
+				class="fa fa-envelope w3-xxlarge"></i>
+			<p>CONTACT</p>
+		</a>
+	</nav>
+
+	<!-- Navbar on small screens (Hidden on medium and large screens) -->
+	<div class="w3-top w3-hide-large w3-hide-medium w3-black" id="myNavbar" style="height:30px;padding:2%;">
+		<div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small" style="display: flex;">
+			<a href="#" class="w3-bar-item w3-button " style="width:24%;">HOME</a> <a href="#about"
+				class="w3-bar-item w3-button " style="width:24%;">ABOUT</a>
+			<a href="#projects" class="w3-bar-item w3-button " style="width:24%;">PROJECTS</a> <a href="#contact"
+				class="w3-bar-item w3-button " style="width:24%;">CONTACT</a>
+		</div>
+	</div>
+
+	<div id="main">
+
+		<!-- Page Content -->
+		<div class="w3-padding-large">
+			<!-- Header/Home -->
+			<header class="w3-container header-padding w3-center w3-black" id="home">
+				<div class="intro">
+					<h4 class="absolute" style="font-size:40px;">
+						<div class=" bgimg-1 parallax1"></div> <br>
+						<span class="w3-hide-small"></span><br>
+						Myvin Barboza
+					</h4>
+					<p class="absolute">Full Stack Developer to the rescue!!</p>
+				</div>
+			</header>
+
+			<!-- About Section -->
+			<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+				<h2 class="w3-text-light-grey" style="margin-bottom: 5%;">About
+					Me</h2>
+				<br>
+				<!-- <hr style="width: 200px" class="w3-opacity heading_hr"> -->
+
+
+
+
+				<div class="w3-row-padding">
+					<div class="w3-container w3-third " id="hobby-image">
+						<img src="./images/hobby-background.jpg" alt="hobby" style="width: 50%; height:150px"
+							onclick="document.getElementById('modal-hobby').style.display='block'"
+							class="w3-hover-opacity">
+						<p class="w3-wide" style="text-align: center;">Hobby</p>
+					</div>
+					<div class="w3-container w3-third " id="hobby-image">
+						<img src="./images/skills-background.jpg" alt="skills" style="width: 50%;"
+							onclick="document.getElementById('modal-skills').style.display='block'"
+							class="w3-hover-opacity">
+						<p class="w3-wide" style="text-align: center;">Skills</p>
+					</div>
+					<div class="w3-container w3-third education-image" id="hobby-image">
+						<img src="./images/education-background.png" alt="Education" style="width: 55%; height: 135px;"
+							onclick="document.getElementById('modal-education').style.display='block'"
+							class="w3-hover-opacity">
+						<p class="w3-wide" style="text-align: center;">Education</p>
+					</div>
+				</div>
+
+				<div id="modal-hobby" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class="w3-modal-content w3-animate-zoom hobby-modal">
+						<h4>I am passionate about playing the guitar and just enjoying myself in the moment</h4>
+					</div>
+				</div>
+
+				<div id="modal-skills" class="w3-modal" onclick="this.style.display='none'">
+					<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+					<div class=" w3-modal-content w3-animate-zoom hobby-modal">
+
+						<!-- About Section -->
+						<div class="padding-16  small-headings my-exposures-padding my-skills-background"
+							style="text-align: center; margin: 1%; height: 300px">
+							<h3>
+								<b>My Skills</b>
+							</h3>
+
+							<div class="row1">
+								<div class="col-sm-4">
+									<img src="./images/html-logo.jpg" class="img-circle" alt="HTML" width="70"
+										height="70">
+								</div>
+								<div class="col-sm-4">
+									<img src="./images/visual-studio-code-logo.jpg" class="img-circle"
+										alt="visual studio code" width="70" height="70">
+								</div>
+								<div class="col-sm-4">
+									<img src="./images/css-logo.jpg" class="img-circle" alt="css" width="70"
+										height="70">
+								</div>
+							</div>
+
+							<div class="row2">
+								<div class="col-sm-4">
+									<img src="./images/bootstrap-logo.jpg" class="img-circle" alt="bootstrap" width="70"
+										height="70">
+								</div>
+								<div class="col-sm-4">
+									<img src="./images/java-logo.jpg" class="img-circle" alt="java" width="70"
+										height="70">
+								</div>
+								<div class="col-sm-4">
+									<img src="./images/js-logo.jpg" class="img-circle" alt="jQuery" width="70"
+										height="70">
+								</div>
+							</div>
+							<div class="row3">
+								<div class="col-sm-4">
+									<img src="./images/git-logo.jpg" class="img-circle" alt="git" width="70"
+										height="70">
+								</div>
+								<div class="col-sm-4">
+									<img src="./images/eclipse-logo.jpg" class="img-circle" alt="eclipse" width="70"
+										height="70">
+								</div>
+								<div class=col-sm-4>
+									<img src="./images/spring-logo.png" class="img-circle" alt="eclipse" width="70"
+										height="70">
+								</div>
+								<div class=col-sm-4>
+									<img src="./images/angular-logo.jpg" class="img-circle" alt="angular" width="70"
+										height="70">
+								</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="modal-education" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom hobby-modal" style="background-color: transparent;">
+					<div class="container " style="color: black; text-align: center;">
+						<div class="w3-container w3-card w3-white education-container">
+							<h2 class="w3-text-grey w3-padding-16">
+								<i class="	fa fa-bookmark fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+							</h2>
+							<div class="w3-container">
+								<h5 class="w3-opacity">
+									<b>BMS Institute of Technology - Bangalore</b>
+								</h5>
+								<h6 class="w3-text-teal">
+									<i class="fa fa-calendar fa-fw w3-margin-right"></i>2014-2018
+								</h6>
+								<p>B.E.(MECH)<br>67.73%</p>
+								<hr>
+							</div>
+							<div class="w3-container">
+								<h5 class="w3-opacity">
+									<b>EFIA – Abu Dhabi</b>
+								</h5>
+								<h6 class="w3-text-teal">
+									<i class="fa fa-calendar fa-fw w3-margin-right"></i>2014
+								</h6>
+								<p>H.S.C<br>75.5%</p>
+								<hr>
+							</div>
+							<div class="w3-container">
+								<h5 class="w3-opacity">
+									<b>EFIA – Abu Dhabi</b>
+								</h5>
+								<h6 class="w3-text-teal">
+									<i class="fa fa-calendar fa-fw w3-margin-right"></i>2012
+								</h6>
+								<p>S.S.C<br>83.6%</p>
+								<br>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Projects Section -->
+			<div class="w3-padding-64 w3-content" id="projects">
+				<h2 class="w3-text-light-grey">My Projects</h2>
+				<hr style="width: 200px" class="w3-opacity heading_hr">
+
+
+
+				<!-- Second Parallax Image with Text -->
+				<div class="bgimg-2 parallax2 w3-display-container w3-opacity-min " id="projects"
+					style="margin-top: 0px;    background-size: cover;">
+
+
+
+					<div class="container">
+
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+					               <h2 class="project-name">News</h2>
+									<p class="project-details left">
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>Type:</b> News app <br> <i style="font-size: 24px" class="fa">&#xf101;</i>
+										<b>Description</b>: Here a user can search for news from an external API by name and can see the details of that particular news and add news to his/her account.
+                                        <br>
+                                        <i style="font-size: 24px" class="fa">&#xf101;</i><b>
+                                        Technologies Used:<br>
+                                        </b> <b>Front End:</b> HTML, CSS, BOOTSTRAP, JQUERY, JavaScript<b>
+                                        <br>
+								            Back End:
+											JAVA,
+											Springboot, Spring MVC </b>
+                                        
+                                        <br>
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>IDE:</b> Eclipse, Visual Studio Code<br>
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>Frameworks:</b>Spring MVC, Spring Boot, Bootstrap, Angular<br>
+                                        <i style="font-size: 24px" class="fa">&#xf101;</i>
+                                        <b>Server: Apache Tomcat Server 9</b><br>
+                                           <i style="font-size: 24px" class="fa">&#xf101;</i><b>Testing tool: </b>Junit, Protractor, Karma<br>
+                                           <i style="font-size: 24px" class="fa">&#xf101;</i><b>Containerization: </b>Docker<br>
+                                        </p>
+                                        	<p class="project-details" id="ongoing"></p>
+								</div>
+
+								<div class="item">
+									<h2 class="project-name">Movie Cruiser</h2>
+									<p class="project-details left">
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>Type:</b> Movie App <br> <i style="font-size: 24px" class="fa">&#xf101;</i>
+										<b>Description</b>: Here user can search movie from external API by name and can see the details of that particular movie and add favorite movie to his/her account.
+                                        <br>
+                                        <i style="font-size: 24px" class="fa">&#xf101;</i><b>
+                                        Technologies Used:<br>
+                                        </b> <b>Front End:</b> HTML, CSS, BOOTSTRAP, JQUERY, JavaScript<b>
+                                        <br>
+								            Back End:
+											JAVA,
+											Springboot, Spring MVC </b>
+                                        
+                                        <br>
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>IDE:</b> Eclipse, Visual Studio Code<br>
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>Frameworks:</b>Spring MVC, Spring Boot, Bootstrap, Angular<br>
+                                        <i style="font-size: 24px" class="fa">&#xf101;</i>
+                                        <b>Server: Apache Tomcat Server 9</b><br>
+                                           <i style="font-size: 24px" class="fa">&#xf101;</i><b>Testing tool: </b>Junit, Protractor, Karma<br>
+                                           <i style="font-size: 24px" class="fa">&#xf101;</i><b>Containerization: </b>Docker<br>
+                                        </p>
+                                        	<p class="project-details" id="ongoing"></p>
+								</div>
+
+							
+
+								<div class="item">
+								
+									<h2 class="project-name">Swiggy App</h2>
+									<p class="project-details left">
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>Type:</b> Food app <br> <i style="font-size: 24px" class="fa">&#xf101;</i>
+										<b>Description</b>: Here user can add food from the menu to his/her cart update the carts quantity and delete from the cart. 
+                                        <br>
+                                        <i style="font-size: 24px" class="fa">&#xf101;</i><b>
+                                        Technologies Used:<br>
+                                        </b> <b>Front End:</b> HTML, CSS, BOOTSTRAP, JQUERY, JavaScript<b>
+                                        <br>
+								            Back End:
+											JAVA,
+											Springboot, Spring MVC </b>
+                                        
+                                        <br>
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>IDE:</b> Eclipse, Visual Studio Code<br>
+										<i style="font-size: 24px" class="fa">&#xf101;</i><b>Frameworks:</b>Spring MVC, Spring Boot, Bootstrap, Angular<br>
+                                        <i style="font-size: 24px" class="fa">&#xf101;</i>
+                                        <b>Server: Apache Tomcat Server 9</b><br>
+                                           <i style="font-size: 24px" class="fa">&#xf101;</i><b>Testing tool: </b>Junit, Protractor, Karma<br>
+                                           <i style="font-size: 24px" class="fa">&#xf101;</i><b>Containerization: </b>Docker<br>
+                                        </p>
+                                        	<p class="project-details" id="ongoing"></p>
+								</div>
+							
+                            
+							</div>
+
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span
+								class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span>
+						</a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span
+								class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End Project Section -->
+
+			<!-- Contact Section -->
+			<div class=" w3-content w3-text-grey" id="contact">
+				<h2 class="w3-text-light-grey">Contact Me</h2>
+                	<img src="./images/tenor.gif" alt="hobby" style=""
+							class="w3-hover-opacity">
+				<hr style="width: 200px" class="w3-opacity heading_hr">
+
+				<div class="w3-section">
+					<p>
+						<i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+						Bangalore, India.
+					</p>
+					<p>
+						<i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+						Phone: +91 9740075723
+					</p>
+					<p>
+						<i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
+						</i> Email: myvinbarboza@gmail.com
+					</p>
+				</div>
+				<br>
+				<p>Lets get in touch. Send me a message:</p>
+
+				<form action="mailto:ankitabarwad@gmail.com" method="GET">
+					<p>
+						<input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"
+							style="border-radius:4px;">
+					</p>
+					<p>
+						<input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"
+							style="border-radius:4px;">
+					</p>
+					<p>
+						<input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"
+							style="border-radius:4px;">
+					</p>
+					<p>
+						<input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"
+							style="border-radius:4px;">
+					</p>
+					<p>
+						<button class="w3-button w3-light-grey w3-padding-large" type="submit" value="Send"
+							style="border-radius:4px;">
+							<i class="fa fa-paper-plane"></i> SEND MESSAGE
+						</button>
+					</p>
+				</form>
+				<!-- End Contact Section -->
+			</div>
+
+
+			<!-- Footer -->
+			<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge"
+				style="display:flex; justify-content: space-evenly; padding-bottom: 20px !important;">
+				</a> <a style="color: grey;" href="https://www.instagram.com/myvin_barboza/"> <i
+						class="fa fa-instagram w3-hover-opacity"> </i>
+				</a> <a style="color: grey;" href="https://www.linkedin.com/in/myvin-barboza-43744488"> <i
+						class="fa fa-linkedin w3-hover-opacity"> </i>
+				</a>
+
+				<!-- End footer -->
+			</footer>
+			<!-- END PAGE CONTENT -->
+		</div>
+	</div>
+	</div>
+
+
+	</div>
+	</div>
+</body>
+
+</html>
